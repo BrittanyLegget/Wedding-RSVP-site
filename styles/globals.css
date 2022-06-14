@@ -1,0 +1,131 @@
+.active {
+  opacity: 1;
+}
+/* .MuiCardHeader-title {
+  font-size: 45px;
+} */
+
+.MuiCardHeader-subheader {
+  text-align: right;
+  color: white;
+}
+.MuiGrid-container {
+  display: "flex";
+  align-items: "center";
+  font-size: 30;
+  text-align: center;
+}
+.MuiImageListItem-standard {
+  border-radius: "25px";
+}
+
+.countdown {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 90%;
+}
+
+@media all and (max-width: 1150px) {
+  .countdown {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+  }
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  top: 70%;
+  left: 1%;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media all and (max-width: 1166px) {
+  .caption {
+    top: 70%;
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .caption {
+    top: 63%;
+    font-size: 23px;
+    text-align: center;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  text-align: left;
+  padding-top: 10px;
+  width: 50%;
+}
+
+/*
+ * Spinner derived from https://tobiasahlin.com/spinkit/.
+ */
+
+.spinner {
+  width: 60px;
+  height: 60px;
+
+  position: relative;
+  margin: 100px auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #0f5044;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
